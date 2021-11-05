@@ -104,7 +104,6 @@ export default function ButtonsPillKinedu( props: ButtonsPillKineduProps ) {
   return (
     <div>
       <span className={ classes.headerTitle }>{ titleHeader }</span>
-
       <AntTabs
         value={value}
         onChange={handleChange}

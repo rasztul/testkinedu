@@ -104,16 +104,21 @@ export default function ButtonsPillKinedu( props: ButtonsPillKineduProps ) {
   return (
     <div>
       <span className={ classes.headerTitle }>{ titleHeader }</span>
-      
-      <AntTabs value={ value } onChange={ handleChange } aria-label={ titleHeader }>
-
-          <AntTab className={ classButtonLeft } label={ titleBtnLeft } />
-          <AntTab className={ classButtonRight } label={ titleBtnRight } />
-
+      <AntTabs
+        value={value}
+        onChange={handleChange}
+        aria-label={titleHeader}
+      >
+        <AntTab
+          className={classButtonLeft}
+          label={titleBtnLeft}
+        />
+        <AntTab
+          className={classButtonRight}
+          label={titleBtnRight}
+        />
       </AntTabs>
-
       <Typography className={classes.padding} />
-      
       <DividerKinedu />
     </div>
   )
